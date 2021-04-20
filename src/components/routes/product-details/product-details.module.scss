@@ -1,0 +1,49 @@
+@import '../../../variables.scss';
+
+.container {
+    display: flex;
+    background-color: $color-white;
+    padding: 10px 15px;
+    height: 750px;
+    width: 955px;
+    max-width: 955px;
+
+    & .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .secondColumn {
+        margin-left: 20px;
+        width: 255px;
+    }
+
+    & .description {
+        height: 250px;
+        overflow-y: auto;
+        
+        & .content {
+            margin-top: 20px;
+            color: $color-gray-dark;
+            font-size: 14px;
+        }
+    }
+
+    & .imageContainer, .description .content {
+        width: 650px;
+    }
+
+    & .imageContainer {
+        height: 500px;
+    }
+
+    & .imageContainer img {
+        height: 80%;
+        object-fit: contain;
+        width: 80%;
+    }
+
+    & .priceContainer, .locationContainer {
+        margin-top: 15px;
+    }
+}

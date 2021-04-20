@@ -1,0 +1,50 @@
+@import '../../../variables.scss';
+
+.row {
+    background-color: $color-white;
+    display: flex;
+    padding: 5px 5px;
+    height: 200px;
+    max-width: 955px;
+    width: 100%;
+    position: relative;
+    min-width: 270px;
+
+    & .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .priceContainer {
+        flex: 1;
+    }
+
+    & .imageContainer, .locationContainer {
+        width: 150px;
+    }
+
+    & .imageContainer img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    & .imageContainer img:hover {
+        cursor: pointer;
+    }
+
+    & .priceContainer, .locationContainer {
+        margin: 15px 0px 0px 10px;
+    }
+    
+    & .separator {
+        position: absolute;
+        border-bottom: 1px solid $color-gray-light;
+        width: calc(100% - 10px);
+        bottom: 0;
+    }
+
+    & .name {
+        padding-top: 10px;
+    }
+}
